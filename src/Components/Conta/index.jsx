@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Private from "../../assets/images/privado.svg";
 import EyeIcon from "../../assets/images/olho.svg";
 import Money from "../../assets/images/dinheiro.svg";
-import { Icone, Box, Saldo, Detail, Botao } from "../UI";
+import { Icone, Box, Saldo, Detail, Botao, IconeTema } from "../UI";
 
 const IconeMargin = styled(Icone)`
   margin-top: 2px;
@@ -28,7 +28,7 @@ const Conta = () => {
       <SaldoFontPadding>
         Saldo disponível{" "}
         <span>
-          <Icone src={Money} alt="Ícone Saldo" />
+          <IconeTema src={Money} alt="Ícone Saldo" />
         </span>
         {toggleState ? (
           <Saldo>
